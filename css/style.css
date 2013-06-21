@@ -1,0 +1,19 @@
+#letterbox_thumbnails_size_settings{
+    margin-left:25px;
+}
+.lt_element{
+    margin: 10px 0;
+}
+.lt_element_label{
+    font-weight:bold;
+}
+.lt_element_wrapper{
+
+}
+.lt_element_checkbox_label{
+    
+}
+.lt_element_checkbox_wrapper{
+    float:left;
+    margin:0 10px 5px 0;
+}
