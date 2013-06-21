@@ -164,9 +164,9 @@ class WP_Image_Editor_GDLT extends WP_Image_Editor {
             $max_h = $dst_h;
         }
         
-        $lt_color_r = get_option('letterbox_thumbnails_color_r');
-        $lt_color_g = get_option('letterbox_thumbnails_color_g');
-        $lt_color_b = get_option('letterbox_thumbnails_color_b');
+        $lt_color_r = get_option('letterbox_thumbnails_color_r', 255);
+        $lt_color_g = get_option('letterbox_thumbnails_color_g', 255);
+        $lt_color_b = get_option('letterbox_thumbnails_color_b', 255);
 
         $resized = wp_imagecreatetruecolor($max_w, $max_h);
         $white = imagecolorallocate($resized, $lt_color_r, $lt_color_g, $lt_color_b);

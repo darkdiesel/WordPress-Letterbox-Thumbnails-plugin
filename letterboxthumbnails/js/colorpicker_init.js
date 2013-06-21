@@ -13,9 +13,9 @@
         },
         onChange: function(hsb, hex, rgb) {
             $('#colorSelector div').css('backgroundColor', '#' + hex);
-            $('#dev_ipa_letterboxing_thumb_color_r').val(rgb.r);
-            $('#dev_ipa_letterboxing_thumb_color_g').val(rgb.g);
-            $('#dev_ipa_letterboxing_thumb_color_b').val(rgb.b);
+            $('#letterbox_thumbnails_color_r').val(rgb.r);
+            $('#letterbox_thumbnails_color_g').val(rgb.g);
+            $('#letterbox_thumbnails_color_b').val(rgb.b);
         }
     });
 })(jQuery)

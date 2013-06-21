@@ -43,14 +43,14 @@ class LetterboxThumbnails {
     }
 
     function add_admin_menu() {
-        add_options_page(__('LetterBox Thumbnails Settings', 'default'), __('Letterbox Thumbnails', 'Letterbox Thumbnails'), 8, 'letterboxthumbnails-settings', array(&$this, 'letterboxing_settings_interface'));
+        add_options_page(__('LetterBox Thumbnails Settings', 'default'), __('Letterbox Thumbnails', 'Letterbox Thumbnails'), 'manage_options', 'letterbox_thumbnails.php', array(&$this, 'letterboxing_settings_interface'));
     }
 
     function letterboxing_settings_interface() {
         //add css file
         wp_register_script('colorpicker_js1', plugins_url('/colorpicker/js/colorpicker.js', __FILE__));
         wp_enqueue_script('colorpicker_js1');
-        wp_register_script('colorpicker_js3', plugins_url('/colorpicker/js/script.js', __FILE__));
+        wp_register_script('colorpicker_js3', plugins_url('/js/colorpicker_init.js', __FILE__));
         wp_enqueue_script('colorpicker_js3');
 
         wp_register_style('colorpicker_css', plugins_url('/css/style.css', __FILE__));
@@ -87,7 +87,7 @@ class LetterboxThumbnails {
             update_option('letterbox_thumbnails_color_b', $letterbox_thumbnails_color_b);
         }
         ?>
-        <form id="letterbox_thumbnails_size_settings" name="letterbox_thumbnails_size_settings_form" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=letterboxing-settings&amp;updated=true">
+        <form id="letterbox_thumbnails_size_settings" name="letterbox_thumbnails_size_settings_form" method="post" action="<?php echo $_SERVER['PHP_SELF'] ?>?page=letterbox_thumbnails.php&amp;updated=true">
             <?php
             if (function_exists('wp_nonce_field')) {
                 wp_nonce_field('letterbox_thumbnails_size_settings_form');

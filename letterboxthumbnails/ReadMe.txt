@@ -8,10 +8,10 @@ Stable tag:
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin add new editor for generate thumbnails with letterboxing style. Color for letterbox backgroud sets in settings.
+This plugin add new editor for generating thumbnails with letterboxing style. Color for letterboxing background sets in settings.
 
 == Description ==
-This plugin add new editor for generate thumbnails with letterboxing style. Color for letterbox backgroud sets in settings.
+This plugin add new editor for generating thumbnails with letterboxing style. Color for letterboxing background sets in settings.
 
 
 == Installation ==
