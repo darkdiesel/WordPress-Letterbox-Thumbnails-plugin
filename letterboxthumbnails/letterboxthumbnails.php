@@ -27,7 +27,7 @@
 class LetterboxThumbnails
 {
     // Plugin initialization
-    function LetterboxThumbnails()
+    function __construct()
     {
 	add_action('admin_menu', array(&$this, 'add_admin_menu'));
 	add_filter('wp_image_editors', array(&$this, 'gd_letterbox_editor'));
